@@ -1,13 +1,16 @@
 import { useState } from 'react'
 import './App.css'
+import Navbar from './components/Navbar'
+import HeroSection from './components/HeroSection'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-    <h1 className=''>hello world</h1>
-    </>
+    <main className='overflow-x-hidden bg-black tracking-tighter text-gray-200 antialiased'>
+      <Navbar />
+      <HeroSection />
+    </main>
   )
 }
 
